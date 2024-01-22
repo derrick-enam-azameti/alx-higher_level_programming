@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def safe_print_list(my_list=None, x=0):
+def safe_print_list(my_list=[], x=0):
 	"""Print x elements of a list safely.
 
 	Args:
@@ -11,8 +11,6 @@ def safe_print_list(my_list=None, x=0):
 		The number of elements successfully printed.
 	"""
 	elem = 0
-	if my_list is None:
-		my_list = []
 
 	for i in range(x):
 		try:
